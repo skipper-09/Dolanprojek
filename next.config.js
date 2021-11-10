@@ -1,3 +1,6 @@
 module.exports = {
-  reactStrictMode: true,
+    reactStrictMode: true,
+    env: {
+        PUBLICAPI: process.env.PUBLICAPI,
+    }
 }

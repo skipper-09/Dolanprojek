@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+  background: -webkit-gradient(linear, left top, right top, from(#779CFF), to(#51B4E6));
+  background: linear-gradient(to right, #779CFF, #51B4E6);
+  margin-top: -80px;
+  height: 110vh;
+}
+
+.hero .content {
+  margin-top: 35vh;
+}
+
+.hero .content img {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  width: 50px;
+  margin-left: 10px;
+}
+
+.hero .content p {
+  font-size: 18px;
+}
+
+.hero .content .input {
+  position: relative;
+}
+
+.hero .content .input .serch {
+  height: 50px;
+  width: 75%;
+  position: relative;
+}
+
+.hero .content .input .serch :focus {
+  outline-color: none;
+}
+
+.hero .content .input .iconserch {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 73%;
+  width: 50px;
+  height: 50px;
+  overflow: visible;
+  background: white;
+  border-radius: 5px;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.hero .gamhero {
+  margin-top: 60px;
+}
+
+.hero .gamhero img {
+  width: 100%;
+  height: 500px;
+}
+
+.service {
+  margin-top: 50px;
+}
+
+.service h3 {
+  color: #3660CF;
+}
+
+.service .content-service {
+  background-color: #E1C035;
+  border-radius: 20px;
+  padding: 20px 0;
+  height: 120px;
+}
+
+.service .content-service h5 {
+  font-size: 18px;
+}
+
+.service .content-service1 {
+  background-color: #F18D0A;
+  border-radius: 20px;
+  padding: 20px 0;
+  height: 120px;
+}
+
+.service .content-service1 h5 {
+  font-size: 18px;
+}
+
+.service .content-service2 {
+  background-color: #44AADE;
+  border-radius: 20px;
+  padding: 20px 0;
+  height: 120px;
+}
+
+.service .content-service2 h5 {
+  font-size: 18px;
+}
+
+.service .content-service3 {
+  background-color: #FBCDAB;
+  border-radius: 20px;
+  padding: 20px 0;
+  height: 120px;
+}
+
+.service .content-service3 h5 {
+  font-size: 18px;
+}
+
+.populer-destination {
+  margin-top: 50px;
+}
+
+.populer-destination h3 {
+  color: #3660CF;
+}
+
+.populer-destination .destination .card {
+  border-radius: 20px;
+  border: none;
+}
+
+.populer-destination .destination .card img {
+  border-radius: 20px;
+}
+
+.populer-destination .badgecustom {
+  left: 210px;
+  right: 25px;
+}
+
+.populer-guide {
+  margin-top: 50px;
+}
+
+.populer-guide h3 {
+  color: #3660CF;
+}
+
+.populer-guide .card {
+  border: none;
+  border-radius: 15px;
+}
+
+.populer-guide .card img {
+  width: 50%;
+  height: 50%;
+}
+
+.footer {
+  height: 10vh;
+  background-color: white;
+  border-top: 1px solid #cecece;
+}
+
+.footer span {
+  font-weight: 500;
+}
+
+.destinasi .card {
+  padding: 0 5px;
+}
+
+.destinasi .card img {
+  height: 12vw;
+}
+
+.destinasi .rekomendasi .box img {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+  height: 25vw;
+  -webkit-transition: all .2s  ease-in-out;
+  transition: all .2s  ease-in-out;
+}
+
+.destinasi .rekomendasi .box img:hover {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+.destinasi .rekomendasi .box .conten .lokasi {
+  font-size: 1.5em;
+}
+
+.destinasi .rekomendasi .box .conten .jumlah {
+  font-size: 1em;
+}
+
+.hero-blog .wrap img {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+  -webkit-transition: all .2s  ease-in;
+  transition: all .2s  ease-in;
+}
+
+.hero-blog .wrap img:hover {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+.hero-blog .wrap .atribut {
+  top: vw;
+  bottom: 4vw;
+}
+
+.hero-blog .box img {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+  height: 28vh;
+  max-height: 20vw;
+  -webkit-transition: all .2s  ease-in;
+  transition: all .2s  ease-in;
+}
+
+.hero-blog .box img:hover {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+.hero-blog .box .atribut {
+  top: 15vh;
+  bottom: 10vw;
+}
+
+.hero-blog .box .atribut p {
+  font-size: 0.8em;
+  margin-top: -8px;
+}
+
+@media (min-width: 412px) and (max-width: 575.98px) {
+  .populer-destination .badgecustom {
+    left: 245px;
+    right: 25px;
+  }
+  .hero {
+    height: 80vh;
+  }
+  .hero .content {
+    margin-top: 25vh;
+  }
+  .hero .gamhero img {
+    display: none;
+  }
+  .hero-blog .box img {
+    height: 30vh;
+    max-height: 30vw;
+  }
+  .hero-blog .box .atribut {
+    top: 14vh;
+    bottom: 10vw;
+  }
+  .hero-blog .box .atribut p {
+    font-size: 0.8em;
+    margin-top: -8px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .populer-destination .badgecustom {
+    left: 370px;
+    right: 25px;
+  }
+  .hero .content {
+    margin-top: 35vh;
+  }
+  .hero .gamhero {
+    margin-top: 60px;
+  }
+  .hero .gamhero img {
+    display: none;
+  }
+  .hero-blog .box img {
+    height: 30vh;
+    max-height: 30vw;
+  }
+  .hero-blog .box .atribut {
+    top: 20vh;
+    bottom: 10vw;
+  }
+  .hero-blog .box .atribut p {
+    font-size: 0.8em;
+    margin-top: -8px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero {
+    height: 80vh;
+  }
+  .hero .content {
+    margin-top: 28vh;
+  }
+  .hero .gamhero {
+    margin-top: 120px;
+  }
+  .populer-destination .badgecustom {
+    left: 550px;
+    right: 25px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .hero .content {
+    margin-top: 35vh;
+  }
+  .hero .gamhero {
+    margin-top: 120px;
+  }
+  .populer-destination .badgecustom {
+    left: 155px;
+    right: 25px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
