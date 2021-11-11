@@ -251,6 +251,27 @@ max-height: 20vw;
      }
     }
   }
+
+}
+
+//section blog
+.sectionblog{
+  .post{
+    .box{
+
+      & .gambar{
+  max-width: 50vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  
+  img{
+    max-width: 30vw;
+    width: 50vh;
+  }
+      }
+    }
+  }
 }
 
 

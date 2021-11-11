@@ -15,7 +15,7 @@ export default function HeroBlog() {
 
 
 
-    const { data, error } = useSwr(process.env.PUBLICAPI + '/blogs?_start=1&_limit=4', fetcher);
+    const { data, error } = useSwr(process.env.PUBLICAPI + '/blogs?_start=2&_limit=5', fetcher);
     if (error) return <div>failed to load</div>
     if (!data) return <div>loading...</div>
 
@@ -25,8 +25,7 @@ export default function HeroBlog() {
                 <div className="row gy-4 ">
                     <div className="col-md-6 col-12 col-sm-12">
 
-                        <SubHero
-                        />
+                        <SubHero />
 
                     </div>
                     <div className="col-md-6 col-12 col-sm-12 ">

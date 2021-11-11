@@ -3,6 +3,11 @@ import Result from './result'
 import Kategori from './kategori'
 
 export default function Section() {
+    const data = [
+        { id: 1, gambar: "/gambar/bromo.jpg", judul: "Bromo", deskripsi: "  lorem", harga: "50.000" },
+        { id: 2, gambar: "/gambar/Air-Terjunkembar.png", judul: "Air Terjun Kembar", deskripsi: "  lorem", harga: "60.000" },
+        { id: 3, gambar: "/gambar/bromo.jpg", judul: "Bromo", deskripsi: "  lorem", harga: "50.000" },
+    ]
     return (
         <>
             <div className="results mt-5">
@@ -22,18 +27,13 @@ export default function Section() {
                         </div>
                     </div>
                     <div className="col-md-9 col-sm-9 col-9">
-                        <Result gambar="/gambar/bromo.jpg" tujuan="/" judul="Gunung Bromo" deskripsi="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper, ligula eu pulvinar rutrum, turpis magna euismod ipsum, id egestas purus neque ac lectus. Cras pulvinar nisi a hendrerit molestie. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            harga="50.000"
-                        />
-                        <Result gambar="/gambar/bromo.jpg" tujuan="/" judul="Gunung Bromo" deskripsi="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper, ligula eu pulvinar rutrum, turpis magna euismod ipsum, id egestas purus neque ac lectus. Cras pulvinar nisi a hendrerit molestie. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            harga="50.000"
-                        />
-                        <Result gambar="/gambar/bromo.jpg" tujuan="/" judul="Gunung Bromo" deskripsi="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper, ligula eu pulvinar rutrum, turpis magna euismod ipsum, id egestas purus neque ac lectus. Cras pulvinar nisi a hendrerit molestie. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            harga="50.000"
-                        />
-                        <Result gambar="/gambar/bromo.jpg" tujuan="/" judul="Gunung Bromo" deskripsi="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper, ligula eu pulvinar rutrum, turpis magna euismod ipsum, id egestas purus neque ac lectus. Cras pulvinar nisi a hendrerit molestie. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            harga="50.000"
-                        />
+                        {data.map((produk) => (
+
+                            <Result key={produk.id} gambar={produk.gambar} tujuan="/" judul={produk.judul} deskripsi={produk.deskripsi}
+                                harga={produk.harga} tujuan={`/serch/${produk.id}`}
+                            />
+                        ))}
+
 
                     </div>
                 </div>

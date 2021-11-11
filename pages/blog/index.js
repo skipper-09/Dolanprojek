@@ -5,7 +5,7 @@ import Layout from '../../Component/Layout'
 export default function Blog() {
     return (
         <>
-            <Layout>
+            <Layout title="Dolan | Blog">
                 <div className="container">
                     <HeroBlog />
                     <SectionBlog />
