@@ -1,11 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  background-color: transparent;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 .hero {
-  background: -webkit-gradient(linear, left top, right top, from(#779CFF), to(#51B4E6));
-  background: linear-gradient(to right, #779CFF, #51B4E6);
+  background: -webkit-gradient(linear, left top, right top, from(#779cff), to(#51b4e6));
+  background: linear-gradient(to right, #779cff, #51b4e6);
   margin-top: -80px;
   height: 110vh;
 }
@@ -72,11 +78,11 @@ body {
 }
 
 .service h3 {
-  color: #3660CF;
+  color: #3660cf;
 }
 
 .service .content-service {
-  background-color: #E1C035;
+  background-color: #e1c035;
   border-radius: 20px;
   padding: 20px 0;
   height: 120px;
@@ -87,7 +93,7 @@ body {
 }
 
 .service .content-service1 {
-  background-color: #F18D0A;
+  background-color: #f18d0a;
   border-radius: 20px;
   padding: 20px 0;
   height: 120px;
@@ -98,7 +104,7 @@ body {
 }
 
 .service .content-service2 {
-  background-color: #44AADE;
+  background-color: #44aade;
   border-radius: 20px;
   padding: 20px 0;
   height: 120px;
@@ -109,7 +115,7 @@ body {
 }
 
 .service .content-service3 {
-  background-color: #FBCDAB;
+  background-color: #fbcdab;
   border-radius: 20px;
   padding: 20px 0;
   height: 120px;
@@ -124,7 +130,7 @@ body {
 }
 
 .populer-destination h3 {
-  color: #3660CF;
+  color: #3660cf;
 }
 
 .populer-destination .destination .card {
@@ -146,7 +152,7 @@ body {
 }
 
 .populer-guide h3 {
-  color: #3660CF;
+  color: #3660cf;
 }
 
 .populer-guide .card {
@@ -181,8 +187,8 @@ body {
   -webkit-filter: brightness(0.7);
           filter: brightness(0.7);
   height: 25vw;
-  -webkit-transition: all .2s  ease-in-out;
-  transition: all .2s  ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .destinasi .rekomendasi .box img:hover {
@@ -201,8 +207,8 @@ body {
 .hero-blog .wrap img {
   -webkit-filter: brightness(0.7);
           filter: brightness(0.7);
-  -webkit-transition: all .2s  ease-in;
-  transition: all .2s  ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .hero-blog .wrap img:hover {
@@ -220,8 +226,8 @@ body {
           filter: brightness(0.7);
   height: 28vh;
   max-height: 20vw;
-  -webkit-transition: all .2s  ease-in;
-  transition: all .2s  ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .hero-blog .box img:hover {
@@ -258,6 +264,9 @@ body {
 }
 
 @media (min-width: 412px) and (max-width: 575.98px) {
+  .navbar {
+    background-color: white;
+  }
   .populer-destination .badgecustom {
     left: 245px;
     right: 25px;
@@ -286,6 +295,9 @@ body {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .navbar {
+    background-color: white;
+  }
   .populer-destination .badgecustom {
     left: 370px;
     right: 25px;
@@ -314,6 +326,9 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .navbar {
+    background-color: white;
+  }
   .hero {
     height: 80vh;
   }

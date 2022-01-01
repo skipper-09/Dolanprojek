@@ -13,8 +13,6 @@ export default function HeroBlog() {
         res.data
     )
 
-
-
     const { data, error } = useSwr(process.env.PUBLICAPI + '/blogs?_start=2&_limit=5', fetcher);
     if (error) return <div>failed to load</div>
     if (!data) return <div>loading...</div>

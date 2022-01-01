@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 // // bootstrap component
 // @import "../node_modules/bootstrap/scss/functions";
@@ -10,57 +10,49 @@
 // @import "../node_modules/bootstrap/scss/mixins";
 // @import "../node_modules/bootstrap/scss/root";
 
-
-
 // deklarasi kebutuhan warna pada projek
-$hitam:#707070;
-$biru:#3660CF ;
+$hitam: #707070;
+$biru: #3660cf;
 
-
-
-
-
-
-
-body{
-    font-family:'Poppins', sans-serif
+body {
+  font-family: "Poppins", sans-serif;
 }
 
-
-
 //style navbar
-
-
+.navbar {
+  background-color: transparent;
+  transition: all 500ms ease-in-out;
+}
 //style hero
 
-.hero{
-  background: linear-gradient(to right,#779CFF ,#51B4E6);
-  margin-top : -80px;
+.hero {
+  background: linear-gradient(to right, #779cff, #51b4e6);
+  margin-top: -80px;
   height: 110vh;
-  .content{
-      margin-top: 35vh;
-      img{
-          animation-iteration-count: infinite;
-          animation-duration: 5s;
-          animation-direction: alternate;
-          width: 50px;
-          margin-left: 10px;
-      }
-      p{
-        font-size: 18px;
-      }
-      .input{
+  .content {
+    margin-top: 35vh;
+    img {
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
+      animation-direction: alternate;
+      width: 50px;
+      margin-left: 10px;
+    }
+    p {
+      font-size: 18px;
+    }
+    .input {
+      position: relative;
+      .serch {
+        height: 50px;
+        width: 75%;
         position: relative;
-        .serch{
-          height: 50px;
-          width: 75%;
-          position: relative;
-          & :focus{
-            outline-color: none;
-          }
+        & :focus {
+          outline-color: none;
         }
-        .iconserch{
-        position:absolute;
+      }
+      .iconserch {
+        position: absolute;
         right: 0;
         top: 0;
         left: 73%;
@@ -72,140 +64,133 @@ body{
         border: 0;
         padding: 0;
         cursor: pointer;
-        }
-        
       }
-  }
-    & .gamhero{
-      margin-top: 60px;
-      img{
-        width: 100%;
-        height: 500px;
-      }
-      
     }
+  }
+  & .gamhero {
+    margin-top: 60px;
+    img {
+      width: 100%;
+      height: 500px;
+    }
+  }
 }
-
 
 //section
 .service {
   margin-top: 50px;
-  h3{
-    color:$biru;
+  h3 {
+    color: $biru;
   }
   .content-service {
-    background-color: #E1C035;
+    background-color: #e1c035;
     border-radius: 20px;
     padding: 20px 0;
     height: 120px;
-    h5{
-      font-size:18px;
+    h5 {
+      font-size: 18px;
     }
   }
-  .content-service1{
-    background-color: #F18D0A;
+  .content-service1 {
+    background-color: #f18d0a;
     border-radius: 20px;
     padding: 20px 0;
     height: 120px;
-    h5{
-      font-size:18px;
+    h5 {
+      font-size: 18px;
     }
   }
-  .content-service2{
-    background-color: #44AADE;
+  .content-service2 {
+    background-color: #44aade;
     border-radius: 20px;
     padding: 20px 0;
     height: 120px;
-    h5{
-      font-size:18px;
+    h5 {
+      font-size: 18px;
     }
   }
-  .content-service3{
-    background-color: #FBCDAB;
+  .content-service3 {
+    background-color: #fbcdab;
     border-radius: 20px;
     padding: 20px 0;
     height: 120px;
-    h5{
-      font-size:18px;
+    h5 {
+      font-size: 18px;
     }
   }
 }
 
 //populer destination
-.populer-destination{
+.populer-destination {
   margin-top: 50px;
-  h3{
-    color:$biru;
+  h3 {
+    color: $biru;
   }
-  .destination{
-    .card{
+  .destination {
+    .card {
       border-radius: 20px;
       border: none;
-      img{
+      img {
         border-radius: 20px;
       }
     }
   }
-  & .badgecustom{
+  & .badgecustom {
     left: 210px;
     right: 25px;
   }
-  
 }
 
 //populer Guide
-.populer-guide{
+.populer-guide {
   margin-top: 50px;
-  h3{
+  h3 {
     color: $biru;
   }
-  .card{
+  .card {
     border: none;
     border-radius: 15px;
-    img{
-      width:50%;
+    img {
+      width: 50%;
       height: 50%;
     }
-    
   }
 }
 
 //footer
-.footer{
+.footer {
   height: 10vh;
   background-color: white;
-  border-top: 1px solid #cecece ;
-  span{
+  border-top: 1px solid #cecece;
+  span {
     font-weight: 500;
   }
 }
 
-
-
 //Destination Page
-.destinasi{
-  .card{
-padding: 0 5px;
-img{
-  height:12vw;
-}
+.destinasi {
+  .card {
+    padding: 0 5px;
+    img {
+      height: 12vw;
+    }
   }
-  .rekomendasi{
-    .box{
-      img{
-        filter: brightness(.7);
-        height:25vw;
-       
-        transition: all .2s  ease-in-out;
-        &:hover{
+  .rekomendasi {
+    .box {
+      img {
+        filter: brightness(0.7);
+        height: 25vw;
+
+        transition: all 0.2s ease-in-out;
+        &:hover {
           filter: brightness(1);
         }
       }
-       .conten{
-        .lokasi{
+      .conten {
+        .lokasi {
           font-size: 1.5em;
         }
-        .jumlah{
+        .jumlah {
           font-size: 1em;
         }
       }
@@ -213,184 +198,181 @@ img{
   }
 }
 
-
-
 //blog page
-.hero-blog{
-  & .wrap{
-    img{
-      filter: brightness(.7);
+.hero-blog {
+  & .wrap {
+    img {
+      filter: brightness(0.7);
 
-        transition: all .2s  ease-in;
-        &:hover{
-          filter: brightness(1);
-        }
+      transition: all 0.2s ease-in;
+      &:hover {
+        filter: brightness(1);
+      }
     }
-    .atribut{
+    .atribut {
       top: vw;
       bottom: 4vw;
-     
     }
   }
-  & .box{
-    img{
-      filter: brightness(.7);
-      height:28vh;
-max-height: 20vw;
-      transition: all .2s  ease-in;
-        &:hover{
-          filter: brightness(1);
-        }
+  & .box {
+    img {
+      filter: brightness(0.7);
+      height: 28vh;
+      max-height: 20vw;
+      transition: all 0.2s ease-in;
+      &:hover {
+        filter: brightness(1);
+      }
     }
-    .atribut{
+    .atribut {
       top: 15vh;
       bottom: 10vw;
-     p{
-       font-size: 0.8em;
-       margin-top: -8px;
-     }
+      p {
+        font-size: 0.8em;
+        margin-top: -8px;
+      }
     }
   }
-
 }
 
 //section blog
-.sectionblog{
-  .post{
-    .box{
+.sectionblog {
+  .post {
+    .box {
+      & .gambar {
+        max-width: 50vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
 
-      & .gambar{
-  max-width: 50vh;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  
-  img{
-    max-width: 30vw;
-    width: 50vh;
-  }
+        img {
+          max-width: 30vw;
+          width: 50vh;
+        }
       }
     }
   }
 }
 
-
-
-
+//paymanet page
 
 //responsive mobile destination
-@media (min-width: 412px) and (max-width :575.98px) { 
-  
-.populer-destination{
-  & .badgecustom{
-    left: 245px;
-    right: 25px;
+@media (min-width: 412px) and (max-width: 575.98px) {
+  .navbar {
+    background-color: white;
   }
-}
-.hero{
-  height: 80vh;
-  .content{
-    margin-top: 25vh;
+  .populer-destination {
+    & .badgecustom {
+      left: 245px;
+      right: 25px;
+    }
   }
-  & .gamhero{
-      img{
+  .hero {
+    height: 80vh;
+    .content {
+      margin-top: 25vh;
+    }
+    & .gamhero {
+      img {
         display: none;
       }
-      
     }
+  }
+
+  .hero-blog {
+    & .box {
+      img {
+        height: 30vh;
+        max-height: 30vw;
+      }
+      .atribut {
+        top: 14vh;
+        bottom: 10vw;
+        p {
+          font-size: 0.8em;
+          margin-top: -8px;
+        }
+      }
+    }
+  }
 }
 
-.hero-blog{
-  & .box{
-    img{
-      height:30vh;
-max-height: 30vw;
-        
-    }
-    .atribut{
-      top: 14vh;
-      bottom: 10vw;
-     p{
-       font-size: 0.8em;
-       margin-top: -8px;
-     }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .navbar {
+    background-color: white;
+  }
+  .populer-destination {
+    & .badgecustom {
+      left: 370px;
+      right: 25px;
     }
   }
-}
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) { 
-  .populer-destination{
-  & .badgecustom{
-    left: 370px;
-    right: 25px;
-  }
-}
-.hero{
-  .content{
-    margin-top: 35vh;
-  }
-  & .gamhero{
+  .hero {
+    .content {
+      margin-top: 35vh;
+    }
+    & .gamhero {
       margin-top: 60px;
-      img{
+      img {
         display: none;
       }
     }
-}
+  }
 
-.hero-blog{
-  & .box{
-    img{
-      height:30vh;
-max-height: 30vw;
-        
-    }
-    .atribut{
-      top: 20vh;
-      bottom: 10vw;
-     p{
-       font-size: 0.8em;
-       margin-top: -8px;
-     }
+  .hero-blog {
+    & .box {
+      img {
+        height: 30vh;
+        max-height: 30vw;
+      }
+      .atribut {
+        top: 20vh;
+        bottom: 10vw;
+        p {
+          font-size: 0.8em;
+          margin-top: -8px;
+        }
+      }
     }
   }
-}
 }
 
 //responsive tablet destination
-@media (min-width: 768px) and (max-width: 991.98px) { 
-  .hero{
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navbar {
+    background-color: white;
+  }
+  .hero {
     height: 80vh;
-    .content{
+    .content {
       margin-top: 28vh;
     }
-     & .gamhero{
-        margin-top: 120px;
-      }
+    & .gamhero {
+      margin-top: 120px;
+    }
   }
-  .populer-destination{
-  & .badgecustom{
-    left: 550px;
-    right: 25px;
+  .populer-destination {
+    & .badgecustom {
+      left: 550px;
+      right: 25px;
+    }
   }
-  } 
 }
 
 //responsive large dekstop
-@media (min-width: 992px) and (max-width: 1199.98px) { 
-   .hero{
-    .content{
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .hero {
+    .content {
       margin-top: 35vh;
     }
-     & .gamhero{
-        margin-top: 120px;
-        
-      }
+    & .gamhero {
+      margin-top: 120px;
+    }
   }
-  .populer-destination{
-  & .badgecustom{
-    left: 155px;
-    right: 25px;
+  .populer-destination {
+    & .badgecustom {
+      left: 155px;
+      right: 25px;
+    }
   }
-  } 
- }
+}

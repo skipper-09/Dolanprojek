@@ -1,13 +1,15 @@
 import React from 'react'
 import Result from './result'
 import Kategori from './kategori'
+import { produk } from '../../../data/datadamy';
+import useSWR from 'swr';
 
+const fetcher = (url) => fetch(url).then((res) => res.json())
 export default function Section() {
-    const data = [
-        { id: 1, gambar: "/gambar/bromo.jpg", judul: "Bromo", deskripsi: "  lorem", harga: "50.000" },
-        { id: 2, gambar: "/gambar/Air-Terjunkembar.png", judul: "Air Terjun Kembar", deskripsi: "  lorem", harga: "60.000" },
-        { id: 3, gambar: "/gambar/bromo.jpg", judul: "Bromo", deskripsi: "  lorem", harga: "50.000" },
-    ]
+    const { data, error } = useSWR('/api/produk', fetcher)
+
+    if (error) return <div>Failed to load</div>
+    if (!data) return <div>Loading...</div>
     return (
         <>
             <div className="results mt-5">
@@ -27,10 +29,11 @@ export default function Section() {
                         </div>
                     </div>
                     <div className="col-md-9 col-sm-9 col-9">
+
                         {data.map((produk) => (
 
-                            <Result key={produk.id} gambar={produk.gambar} tujuan="/" judul={produk.judul} deskripsi={produk.deskripsi}
-                                harga={produk.harga} tujuan={`/serch/${produk.id}`}
+                            <Result key={produk.id} gambar={produk.photo} tujuan="/" judul={produk.judul} deskripsi={produk.deskripsi}
+                                harga={produk.harga} tujuan={`/serch/produk/[id]`} as={`/serch/produk/${produk.id}`}
                             />
                         ))}
 
@@ -41,3 +44,12 @@ export default function Section() {
         </>
     )
 }
+
+// export async function getServerSideProps() {
+//     const res = await fetch('http://localhost:3000/api/hello');
+//     const data = await res.json();
+//     console.log(data);
+//     return {
+//         props: { data }
+//     }
+// }

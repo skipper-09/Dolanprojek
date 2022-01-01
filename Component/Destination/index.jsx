@@ -24,9 +24,9 @@ export default function Header() {
                         </div>
                     </div>
                     <div className="col-1 col-sm-1">
-                        <Link href="/serch">
-                        
-                        <button name="" id="" className="btn btn-primary" role="button">Cari</button>
+                        <Link href="/serch/produk">
+
+                            <button name="" id="" className="btn btn-primary" role="button">Cari</button>
                         </Link>
                     </div>
                 </div>

@@ -5,7 +5,7 @@ export default function Navbar() {
     const [navbar, setNavbar] = useState(false);
 
     const chnageBackgroundNav = () => {
-        if (window.scrollY >= 40) {
+        if (window.scrollY >= 5) {
             setNavbar(true);
         } else {
             setNavbar(false);
@@ -19,8 +19,8 @@ export default function Navbar() {
         <>
             <nav className={
                 navbar
-                    ? "navbar navbar-expand-lg navbar-light bg-light  fixed-top shadow "
-                    : "navbar navbar-expand-lg navbar-light bg-transparent "
+                    ? "navbar navbar-expand-lg navbar-light bg-light  fixed-top shadow animate__animated animate__fadeInDown animate__faster "
+                    : "navbar navbar-expand-lg navbar-light  "
             }>
                 <div className="container">
                     <a className="navbar-brand" href="#">

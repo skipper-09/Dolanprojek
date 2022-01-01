@@ -1,10 +1,10 @@
 import Link from 'next/link';
-export const Result = ({ gambar, judul, deskripsi, harga, tujuan }) => {
+export const Result = ({ gambar, judul, deskripsi, harga, tujuan, as }) => {
     return (
         <>
             <div className="content d-flex -justify-content-center mt-2 border">
                 <div className="col-4">
-                    <Link href={tujuan}>
+                    <Link href={tujuan} as={as}>
                         <img src={gambar} className="card-img" alt="" />
                     </Link>
                 </div>
