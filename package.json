@@ -27,7 +27,7 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
-    "eslint": "8.0.1",
+    "eslint": "^8.7.0",
     "eslint-config-next": "11.1.2",
     "prisma": "^3.8.1"
   }

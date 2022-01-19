@@ -1,11 +1,9 @@
-import Sidebaradmin from "../../Component/Admin/sidebar";
+import Navbaradmin from "../../Component/Admin/navbar";
 
 export default function Admin() {
     return (
         <div >
-            <Sidebaradmin />
-
-
+            <Navbaradmin />
         </div>
     )
 }
