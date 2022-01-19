@@ -1,0 +1,33 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./basisdata.db"
+}
+
+model Produk {
+  id          Int     @id @default(autoincrement())
+  judul       String
+  photos      String
+  harga       Int
+  description String?
+
+}
+
+model Kategori {
+  id   Int    @id @default(autoincrement())
+  nama String
+}
+
+model Pesanan {
+  id      Int     @id @default(autoincrement())
+  nama    String
+  email   String?
+  telepon Int
+
+}

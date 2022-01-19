@@ -1,6 +1,7 @@
 import React from 'react';
 import Menu from './submenu/menu';
 import { useState, useEffect } from 'react';
+import Link from 'next/Link'
 export default function Navbar() {
     const [navbar, setNavbar] = useState(false);
 
@@ -35,9 +36,11 @@ export default function Navbar() {
                             <Menu menu="Home" className="nav-link " link="/" />
                             <Menu menu="Destination" className="nav-link " link="/destination" />
                             <Menu menu="Blog" className="nav-link " link="/blog" />
-                            <li className="nav-item">
-                                <a name="" id="" className="btn btn-primary  rounded-pill" href="#" role="button">Login</a>
-                            </li>
+                            <Link href="/Admin">
+                                <li className="nav-item">
+                                    <a name="" id="" className="btn btn-primary  rounded-pill" role="button">Login</a>
+                                </li>
+                            </Link>
                         </ul>
                     </div>
                 </div>
