@@ -1,5 +1,5 @@
 import Navbar from "../Navbar"
-// import Footer from "../footer"
+import Footer from "../footer"
 import Head from 'next/head';
 export default function Layout(props) {
     return (
@@ -10,7 +10,7 @@ export default function Layout(props) {
             </Head>
             <Navbar />
             {props.children}
-            {/* <Footer /> */}
+            <Footer />
         </>
     )
 }
