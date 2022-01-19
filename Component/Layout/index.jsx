@@ -1,5 +1,5 @@
 import Navbar from "../Navbar"
-import Footer from "../Footer"
+import Footer from "../footer"
 import Head from 'next/head';
 export default function Layout(props) {
     return (
