@@ -1,7 +1,7 @@
 import React from 'react';
 import Menu from './submenu/menu';
 import { useState, useEffect } from 'react';
-import Link from 'next/Link'
+import Link from 'next/Link';
 export default function Navbar() {
     const [navbar, setNavbar] = useState(false);
 
