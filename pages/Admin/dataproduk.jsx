@@ -1,12 +1,34 @@
 import Layoutadmin from "../../Component/Admin/layoutadmin";
 import useSWR from 'swr';
 
+
+
+
+const hapusKontak = async (idproduk, judul) => {
+    let setuju = confirm(`Hapus kontak atas nama ${judul}?`);
+    if (setuju) {
+        const data = { id: idproduk };
+        const respon = await fetch('/api/hapusproduk', {
+            method: 'POST',
+            body: JSON.stringify(data),
+        });
+        let status = await respon.json();
+        if (status != null) {
+            location.reload();
+        }
+    }
+};
+
+
+
 const fetcher = (url) => fetch(url).then((res) => res.json())
 export default function dataproduk() {
     const { data, error } = useSWR('http://localhost:3000/api/dataproduk', fetcher)
     console.log(data);
     if (error) return <div>Failed to load</div>
     if (!data) return <div>Loading...</div>
+    if (data.length == 0) return <p>Belum ada data produk</p>;
+
     return (
         <div>
             <Layoutadmin title="Data Product" />
@@ -98,8 +120,12 @@ export default function dataproduk() {
                                             name=""
                                             id=""
                                             className="btn btn-danger ms-2"
-                                            href="#"
+
                                             role="button"
+                                            onClick={(event) => {
+                                                event.preventDefault();
+                                                hapusKontak(produk.id, produk.judul);
+                                            }}
 
                                         >
                                             Hapus

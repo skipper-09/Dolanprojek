@@ -4,6 +4,23 @@ import Kategori from './kategori'
 import { produk } from '../../../data/datadamy';
 import useSWR from 'swr';
 
+
+const hapusKontak = async (idKontak, nama) => {
+    let setuju = confirm(`Hapus kontak atas nama ${nama}?`);
+    if (setuju) {
+        const data = { id: idKontak };
+        const respon = await fetch('/api/hapus-kontak', {
+            method: 'POST',
+            body: JSON.stringify(data),
+        });
+        let status = await respon.json();
+        if (status != null) {
+            location.reload();
+        }
+    }
+};
+
+
 export default function Section() {
     const fetcher = (url) => fetch(url).then((res) => res.json())
     const { data, error } = useSWR('/api/produk', fetcher)
