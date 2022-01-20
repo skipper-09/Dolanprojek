@@ -8,7 +8,7 @@ const hapusKontak = async (idproduk, judul) => {
     let setuju = confirm(`Hapus judul  ${judul}?`);
     if (setuju) {
         const data = { id: idproduk };
-        const respon = await fetch('/api/hapusproduk', {
+        const respon = await fetch('http://localhost:3000/api/hapusproduk', {
             method: 'POST',
             body: JSON.stringify(data),
         });
@@ -23,7 +23,7 @@ const hapusKontak = async (idproduk, judul) => {
 
 const fetcher = (url) => fetch(url).then((res) => res.json())
 export default function dataproduk() {
-    const { data, error } = useSWR('/api/dataproduk', fetcher)
+    const { data, error } = useSWR('http://localhost:3000/api/dataproduk', fetcher)
     console.log(data);
     if (error) return <div>Failed to load</div>
     if (!data) return <div>Loading...</div>
