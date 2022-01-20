@@ -2,10 +2,10 @@ import React from 'react'
 import Result from './result'
 import Kategori from './kategori'
 import { produk } from '../../../data/datadamy';
-import useSWR from 'swr';
+import { useSWR } from 'swr';
 
-const fetcher = (url) => fetch(url).then((res) => res.json())
 export default function Section() {
+    const fetcher = (url) => fetch(url).then((res) => res.json())
     const { data, error } = useSWR('/api/produk', fetcher)
 
     if (error) return <div>Failed to load</div>
