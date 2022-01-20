@@ -2,10 +2,9 @@ import { Formik, Form, Field } from "formik";
 const initFormValues = {
   namaLengkap: "",
   email: "",
-  jenisKelamin: "L",
-  agama: "Islam",
+  notlpon: "",
   alamat: "",
-  paketBelajar: [],
+
 };
 const handleOnSubmit = (values, { setSubmitting }) => {
   setTimeout(() => {
@@ -38,50 +37,15 @@ const MainForm = () => (
             />
           </div>
         </div>
-        <fieldset className="row mb-3">
-          <legend className="col-form-label col-md-2 pt-0">
-            Jenis kelamin
-          </legend>
-          <div className="col-md-10">
-            <div className="form-check">
-              <Field
-                className="form-check-input"
-                type="radio"
-                name="jenisKelamin"
-                value="L"
-              />
-              <label className="form-check-label" htmlFor="jenisKelamin">
-                Pria
-              </label>
-            </div>
-            <div className="form-check">
-              <Field
-                className="form-check-input"
-                type="radio"
-                name="jenisKelamin"
-                value="P"
-              />
-              <label className="form-check-label" htmlFor="jenisKelamin">
-                Wanita
-              </label>
-            </div>
-          </div>
-        </fieldset>
         <div className="row mb-3">
-          <label htmlFor="agama" className="col-md-2 col-formlabel">
-            Agama
+          <label htmlFor="telepon" className="col-md-2 col-form-label">
+            No Telepon
           </label>
           <div className="col-md-10">
-            <Field as="select" name="agama" className="form-control">
-              <option>Islam</option>
-              <option>Katolik</option>
-              <option>Protestan</option>
-              <option>Hindu</option>
-              <option>Buddha</option>
-              <option>Konghucu</option>
-            </Field>
+            <Field type="text" name="notlpon" className="form-control" />
           </div>
         </div>
+
         <div className="row mb-3">
           <label htmlFor="alamat" className="col-md-2 col-formlabel">
             Alamat
@@ -90,47 +54,7 @@ const MainForm = () => (
             <Field name="alamat" as="textarea" className="form-control" />
           </div>
         </div>
-        <fieldset className="row mb-3">
-          <legend className="col-form-label col-md-2 pt-0">
-            Paket pilihan
-          </legend>
-          <div className="col-md-10">
-            <div className="form-check">
-              Modul 4 Pemrograman Web Dengan Framework | 5
-              <Field
-                className="form-check-input"
-                type="checkbox"
-                name="paketBelajar"
-                value="Desain Web"
-              />
-              <label className="form-check-label" htmlFor="paketBelajar">
-                Desain Web
-              </label>
-            </div>
-            <div className="form-check">
-              <Field
-                className="form-check-input"
-                type="checkbox"
-                name="paketBelajar"
-                value="Pemrograman Web"
-              />
-              <label className="form-check-label" htmlFor="paketBelajar">
-                Pemrograman Web
-              </label>
-            </div>
-            <div className="form-check">
-              <Field
-                className="form-check-input"
-                type="checkbox"
-                name="paketBelajar"
-                value="Fullstack Development"
-              />
-              <label className="form-check-label" htmlFor="paketBelajar">
-                Fullstack Development
-              </label>
-            </div>
-          </div>
-        </fieldset>
+
         <div className="row">
           <div className="col-md-10 offset-md-2">
             <button

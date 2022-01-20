@@ -33,7 +33,7 @@ export default function Section() {
                         {data.map((produk) => (
 
                             <Result key={produk.id} gambar={produk.photo} tujuan="/" judul={produk.judul} deskripsi={produk.deskripsi}
-                                harga={produk.harga} tujuan={`/serch/produk/[id]`} as={`/serch/produk/${produk.id}`}
+                                tujuan={`/serch/produk/[id]`} as={`/serch/produk/${produk.id}`}
                             />
                         ))}
 

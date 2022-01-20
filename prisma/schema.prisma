@@ -6,14 +6,15 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:./basisdata.db"
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  // shadowDatabaseUrl = env("DATABASE_URL")
 }
 
 model Produk {
   id          Int     @id @default(autoincrement())
   judul       String
-  photos      String
+  photos      String?
   harga       Int
   description String?
 
@@ -25,9 +26,9 @@ model Kategori {
 }
 
 model Pesanan {
-  id      Int     @id @default(autoincrement())
+  id      Int    @id @default(autoincrement())
   nama    String
-  email   String?
+  email   String
   telepon Int
 
 }

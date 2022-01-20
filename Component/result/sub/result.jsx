@@ -11,7 +11,7 @@ export const Result = ({ gambar, judul, deskripsi, harga, tujuan, as }) => {
                 <div className="col-8 px-4 py-4">
                     <h5 className=" fw-bold">{judul}</h5>
                     <p>{deskripsi}</p>
-                    <h6 className=" fw-bold">Rp {harga} / Person</h6>
+                    {/* <h6 className=" fw-bold">Rp {harga} / Person</h6> */}
                 </div>
             </div>
         </>

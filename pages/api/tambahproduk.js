@@ -1,5 +1,4 @@
-import { PrismaClient } from '@prisma/client';
-const prisma = new PrismaClient();
+import prisma from '../../client.ts'
 const handler = async (req, res) => {
     if (req.method !== 'POST')
         return res
