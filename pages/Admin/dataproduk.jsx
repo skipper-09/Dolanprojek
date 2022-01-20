@@ -5,7 +5,7 @@ import useSWR from 'swr';
 
 
 const hapusKontak = async (idproduk, judul) => {
-    let setuju = confirm(`Hapus kontak atas nama ${judul}?`);
+    let setuju = confirm(`Hapus judul  ${judul}?`);
     if (setuju) {
         const data = { id: idproduk };
         const respon = await fetch('http://localhost:3000/api/hapusproduk', {
