@@ -23,7 +23,7 @@ const hapusKontak = async (idproduk, judul) => {
 
 const fetcher = (url) => fetch(url).then((res) => res.json())
 export default function dataproduk() {
-    const { data, error } = useSWR('http://localhost:3000/api/dataproduk', fetcher)
+    const { data, error } = useSWR('/api/dataproduk', fetcher)
     console.log(data);
     if (error) return <div>Failed to load</div>
     if (!data) return <div>Loading...</div>
