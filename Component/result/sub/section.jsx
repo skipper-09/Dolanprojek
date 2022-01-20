@@ -2,7 +2,7 @@ import React from 'react'
 import Result from './result'
 import Kategori from './kategori'
 import { produk } from '../../../data/datadamy';
-import { useSWR } from 'swr';
+import useSWR from 'swr';
 
 export default function Section() {
     const fetcher = (url) => fetch(url).then((res) => res.json())
