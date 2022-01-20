@@ -122,10 +122,10 @@ export default function dataproduk() {
                                             className="btn btn-danger ms-2"
 
                                             role="button"
-                                            onClick={(event) => {
-                                                event.preventDefault();
-                                                hapusKontak(produk.id, produk.judul);
-                                            }}
+                                        // onClick={(event) => {
+                                        //     event.preventDefault();
+                                        //     hapusKontak(produk.id, produk.judul);
+                                        // }}
 
                                         >
                                             Hapus
